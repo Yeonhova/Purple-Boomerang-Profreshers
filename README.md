@@ -13,3 +13,5 @@ When I am asked to find the Boolean value of the statement
 The recursive abstraction can find the Boolean value of the statement
 “it is possible to get from the starting position to treasure”?,
 starting with the right-most, untravelled path.
+
+## version*n* wishlist
