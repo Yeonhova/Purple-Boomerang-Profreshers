@@ -1,4 +1,4 @@
-# Purple-Boomerang-Professors
+# Purple-Boomerang-Profreshers
 
 ## personnel
 Kevin Flores & Yeonho Jang
