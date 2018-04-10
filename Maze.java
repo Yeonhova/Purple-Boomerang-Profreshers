@@ -78,6 +78,7 @@ public class Maze {
         // // for debugging: report explorer's location
         // System.out.println( "explorer at " + explorerPosition.rank
                           // + ", " +           explorerPosition.file);
+	
     }
 
 
@@ -90,13 +91,10 @@ public class Maze {
         // Copy the explorer's position (code by Holmes is asserted to work)
         explorerPosition = new Vector( old.explorerPosition);
 
-        throw new java.lang.RuntimeException(
-            "Write code to copy the maze[][] array and rankCount."
-            Vector.rankCount = old.rankCount;
-            for (int index = 0; index < old.maze.length; index++){
-              for (int innerindex = 0; index < old.maze[index].length; innerindex++)
-                Vector.maze[index][innerindex] == old.maze[index][innerindex];}
-              );
+	// throw new java.lang.RuntimeException(
+        //    "Write code to copy the maze[][] array and rankCount.");
+      maze = old.maze.clone();
+      rankCount = old.rankCount;
     }
 
 
