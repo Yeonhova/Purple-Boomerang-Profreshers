@@ -12,9 +12,12 @@ The recursive abstraction can find the boolean value of the statement
 “it is possible to get from the starting position to treasure?”,
 starting with the right-most, untravelled path.
 
-## base case
-If the current path leads to a treasure,
+## base cases
+If the current path leads to a treasure (when the explorer is on the treasure),
 then the statement in the problem has a boolean value of true.
+
+If the explorer is on the wall, 
+then the statement in the problem has a boolean value of false.
 
 ## English or pseudocode description of algorithm
 Jargon specific to this project:
