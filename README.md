@@ -2,6 +2,7 @@
 
 ## Personnel
 Kevin Flores & Yeonho Jang
+
 ## Statement of Problem:
 Given a maze with (distinct) path(s), what is the boolean value of the statement “it is possible to get from the starting position to treasure”?
 
@@ -10,7 +11,7 @@ When I am asked to find the boolean value of the statement
 “it is possible to get from the starting position to treasure?”,
 The recursive abstraction can find the boolean value of the statement
 “it is possible to get from the starting position to treasure?”,
-starting with the right-most, untravelled path.
+starting with the next step cycling in the South, East, North, and West directions.
 
 ## Base Cases
 If the current path leads to a treasure (when the explorer is on the treasure),
@@ -20,9 +21,6 @@ If the explorer is on the wall,
 then the statement in the problem has a boolean value of false.
 
 ## English or Pseudocode Description of Algorithm
-Jargon specific to this project:
-Path: The trail that I am standing on
-Junction: point at which the current path split
 
 When I am asked for the solution to a maze problem,
 	and I travel down my current path and I encounter a junction,
