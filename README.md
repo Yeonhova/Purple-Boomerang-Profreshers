@@ -1,25 +1,25 @@
 # Purple-Boomerang-Profreshers
 
-## personnel
+## Personnel
 Kevin Flores & Yeonho Jang
-## statement of problem:
+## Statement of Problem:
 Given a maze with (distinct) path(s), what is the boolean value of the statement “it is possible to get from the starting position to treasure”?
 
-## recursive abstraction
+## Recursive Abstraction
 When I am asked to find the boolean value of the statement
 “it is possible to get from the starting position to treasure?”,
 The recursive abstraction can find the boolean value of the statement
 “it is possible to get from the starting position to treasure?”,
 starting with the right-most, untravelled path.
 
-## base cases
+## Base Cases
 If the current path leads to a treasure (when the explorer is on the treasure),
 then the statement in the problem has a boolean value of true.
 
 If the explorer is on the wall, 
 then the statement in the problem has a boolean value of false.
 
-## English or pseudocode description of algorithm
+## English or Pseudocode Description of Algorithm
 Jargon specific to this project:
 Path: The trail that I am standing on
 Junction: point at which the current path split
@@ -32,7 +32,7 @@ Base Case - (If base case isn’t prompted after travelling all possible (distin
 If I encounter a treasure,
 then the statement in the problem has a boolean value of true.
 
-## class(es), with fields and methods
+## Class(es), with fields and methods
 
-## version *n* wish list
+## Version *n* wish list
 
