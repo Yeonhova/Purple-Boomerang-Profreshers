@@ -12,23 +12,38 @@ When I am asked to find the boolean value of the statement
 The recursive abstraction can find the boolean value of the statement
 “it is possible to get from the starting position to treasure?”,
 starting with the next step in a cardinal direction.
-
+If the recursive case exhausts without returning any trues, return a false. 
 ## Base Cases
 If the current step has a treasure (when the explorer is on the treasure),
 then the statement in the problem has a boolean value of true.
 
-If the explorer is on the wall, 
+If the value for islegal for the current position returns false (if the explorer is not on a stepping stone), 
 then the statement in the problem has a boolean value of false.
 
 ## English or Pseudocode Description of Algorithm
-
-When I am asked for the solution to a maze problem,
-the Recursive Abstraction can provide the boolean value of the statement in the problem, starting with the next step in a cardinal direction.
-
-Base Case - (If base case isn’t prompted after travelling all possible (distinct) path(s), then the statement in the problem has a boolean value of false)
-If I am on a treasure,
-then the statement in the problem has a boolean value of true.
-
+If the current position has a treasure, // base case decision for victory!
+  return true.
+  
+If the the current positions is not legal, //base case decision for not a stepping stone!
+  return false.
+  
+ else //recursive case
+ 
+  walk North
+    and invoke the recursive abstraction
+    
+  walk East
+    and invoke the recursive abstraction
+    
+  walk South
+    and invoke the recursive abstraction
+    
+  walk West
+    and invoke the recursive abstraction
+    
+  return false //End
+  
+ 
 ## Class(es), with fields and methods
 
 ## Version *n* wish list
