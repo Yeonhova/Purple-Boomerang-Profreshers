@@ -11,8 +11,10 @@ When I am asked to find the boolean value of the statement
 “it is possible to get from the starting position to treasure?”,
 The recursive abstraction can find the boolean value of the statement
 “it is possible to get from the starting position to treasure?”,
-starting with the next step in a cardinal direction.
+starting with the next step in all cardinal direction.
+
 If the recursive case exhausts without returning any trues, return a false. 
+
 ## Base Cases
 If the current step has a treasure (when the explorer is on the treasure),
 then the statement in the problem has a boolean value of true.
@@ -22,29 +24,22 @@ then the statement in the problem has a boolean value of false.
 
 ## English or Pseudocode Description of Algorithm
 If the current position has a treasure, // base case decision for victory!
-  return true.
+	return true.
   
-If the the current positions is not legal, //base case decision for not a stepping stone!
-  return false.
+Else, if the the current positions is not legal, //base case decision for not a stepping stone!
+	return false.
   
  else //recursive case
- 
-  walk North
-    and invoke the recursive abstraction
-    
-  walk East
-    and invoke the recursive abstraction
-    
-  walk South
-    and invoke the recursive abstraction
-    
-  walk West
-    and invoke the recursive abstraction
-    
-  return false //End
-  
+ Drop wall
+  	For each cardinal direction,
+      	move one step forwards 
+      	invoke the recursive abstraction
+      	move one step backwards   
+ return false //End
  
 ## Class(es), with fields and methods
 
 ## Version *n* wish list
-
+- All possible paths to solution
+- Shortest path to solution
+- Longest path to solution
