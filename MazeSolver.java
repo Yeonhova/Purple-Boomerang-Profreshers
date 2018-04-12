@@ -35,20 +35,3 @@ public class MazeSolver{
 	else return "It is not possible to get from the starting posiiton to treasure";
     }
 }
-
-	
-
-	
-
-	
-
-	
-
-	
-	
-	
-	
-		     
-                
-        
-}
