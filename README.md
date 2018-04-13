@@ -23,21 +23,24 @@ If the value for islegal for the current position returns false (if the explorer
 then the statement in the problem has a boolean value of false.
 
 ## English or Pseudocode Description of Algorithm
-If the current position has a treasure, // base case decision for victory!
-	return true.
+If the current position has a treasure, // base case decision for victory!  
+&nbsp;&nbsp;return true.
   
-Else, if the the current positions is not legal, //base case decision for not a stepping stone!
-	return false.
+Else, if the the current positions is not legal, //base case decision for not a stepping stone!  
+&nbsp;&nbsp;return false.
   
- else //recursive case
- Drop wall
-  	For each cardinal direction,
-      	move one step forwards 
-      	invoke the recursive abstraction
-      	move one step backwards   
- return false //End
+else //recursive case  
+Drop wall  
+&nbsp;&nbsp;For each cardinal direction,  
+&nbsp;&nbsp;&nbsp;&nbsp;move one step forwards   
+&nbsp;&nbsp;&nbsp;&nbsp;invoke the recursive abstraction  
+&nbsp;&nbsp;&nbsp;&nbsp;move one step backwards     
+return false //End  
  
 ## Class(es), with fields and methods
+
+## Known Bugs
+
 
 ## Version *n* wish list
 - All possible paths to solution
