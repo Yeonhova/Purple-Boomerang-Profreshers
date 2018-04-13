@@ -65,7 +65,7 @@ solveThis - solves the maze for the statement of the problem
 toString - Self explanatory
 
 ## Known Bugs
-None
+MazeSolver doesn't work on an empty maze. 
 
 ## Version *n* wish list
 - All possible paths to solution
