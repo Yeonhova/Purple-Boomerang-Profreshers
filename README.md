@@ -39,8 +39,33 @@ return false //End
  
 ## Class(es), with fields and methods
 
-## Known Bugs
+###Maze
 
+#####Fields
+maze - a 2D array that represents the state of the maze  
+MAX_RANKS - shows max ranks and implicitly, columns - 64x64 maze  
+rankCount - number of ranks in a particular maze  
+
+#####Methods
+Maze Constructor with three parameters - places explorer in the maze  
+Maze Constructor Copier - Self explanatory  
+toString - Self explanatory  
+dropA - drops a maze element  
+explorerIsOnA - where or what the explorer currently stands on  
+
+###MazeSolver
+
+#####Fields
+maze - stores maze that will be evaluated  
+success - value for the statement of the problem  
+
+#####Methods
+MazeSolver - updates the fileds 
+solveThis - solves the maze for the statement of the problem
+toString - Self explanatory
+
+## Known Bugs
+None
 
 ## Version *n* wish list
 - All possible paths to solution
