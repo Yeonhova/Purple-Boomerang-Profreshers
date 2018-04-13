@@ -2,6 +2,9 @@
   Test the ability to determine 
   if an explorer can reach treasure 
   in a maze. 
+  
+   For example:  java UserOfMazeSolver mazes/4cell_treasureWest.txt 0 0
+   
 */
 
 public class UserOfMazeSolver {
