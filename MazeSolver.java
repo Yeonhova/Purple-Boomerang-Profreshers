@@ -9,8 +9,15 @@ public class MazeSolver{
     
     private  boolean success; //determine if explorer can reach treasure (if any)
 
-    public MazeSolver(Maze maze1){
+    private Displayer displayer;
+
+    public MazeSolver(Maze maze1, int height){
+
+	displayer = new Displayer(height);
+	
 	maze = maze1;
+
+	displayer.atTopOfWindow("maze solving");
 
 	
 	success = solveThis();
@@ -19,10 +26,12 @@ public class MazeSolver{
 
     private boolean solveThis(){
 
-	if (maze.explorerIsOnA() == maze.TREASURE) return true; //base case
+	if (maze.explorerIsOnA() == maze.TREASURE) return true; //base case 
         if (maze.explorerIsOnA() == maze.WALL) return false; //other base case
-	else{
-		int[] directions = {maze.EAST, maze.NORTH, maze.WEST, maze.SOUTH}; 
+        else {
+	    
+
+	    int[] directions = {maze.EAST, maze.NORTH, maze.WEST, maze.SOUTH}; 
 	    for (int nextStep: directions){ 
 
 	       
@@ -30,7 +39,7 @@ public class MazeSolver{
 		 maze.dropA(maze.WALL);
 
 		 maze.go(nextStep);
-		 System.out.println(maze);
+		 displayer.atTopOfWindow(maze.toString());
 
 		 if (solveThis()) return true;
 
@@ -40,8 +49,12 @@ public class MazeSolver{
 	    }
 	    return false;
 	}
+
+	    
+	
     }
-	public String toString(){
-		return "boolean of the statement is " + success;
-	}
-}	
+
+    public String toString(){
+	return "boolean of the statement is " + success;
+    }
+}
