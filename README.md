@@ -3,6 +3,9 @@
 ## Personnel
 Kevin Flores & Yeonho Jang
 
+## v1 
+We implemented the Displayer class
+
 ## Statement of Problem:
 Given a maze with (distinct) path(s), what is the boolean value of the statement “it is possible to get from the starting position to treasure”?
 
